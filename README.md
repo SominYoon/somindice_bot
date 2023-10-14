@@ -21,7 +21,8 @@ COC 사람들이 좋아하니까 100면체로 설정하면 특별히 100 -> 00�
  ~[highlight]      강조 여부 (주사위 최소값 & 최대값 강조해줌) (기본 : True) 
 
   ### 예시
-![스크린샷 2023-10-14 15-36-02](https://github.com/SominYoon/somindice_bot/assets/59977972/edc4f62a-4e98-4067-a98f-b74665f05781) 명령어 채팅 ![image](https://github.com/SominYoon/somindice_bot/assets/59977972/96c2997e-1e7f-4ced-af2d-d86a9ea8e72b) 결과 ![image](https://github.com/SominYoon/somindice_bot/assets/59977972/c2388384-d4ef-49d2-9761-04f4c2754cb4) 5번 반복 적용
+![스크린샷 2023-10-14 15-36-02](https://github.com/SominYoon/somindice_bot/assets/59977972/edc4f62a-4e98-4067-a98f-b74665f05781) 명령어 채팅 ![image](https://github.com/SominYoon/somindice_bot/assets/59977972/96c2997e-1e7f-4ced-af2d-d86a9ea8e72b) 결과 ![image](https://github.com/SominYoon/somindice_bot/assets/59977972/c2388384-d4ef-49d2-9761-04f4c2754cb4) 5번 반복 적용 ![image](https://github.com/SominYoon/somindice_bot/assets/59977972/1f8c95ba-62d5-47b6-9df2-26537bf705cb) 오 100펌블
+
 
  ## /fudge [amount] ~[repeat]
 
@@ -31,3 +32,10 @@ COC 사람들이 좋아하니까 100면체로 설정하면 특별히 100 -> 00�
  ~[repeat]         반복 횟수 (주사위 여러번 굴려야 할때 구지 합산된 값 뜨면 안 이쁘니까 쓰는거) (기본 : 1)
 
  ~[sum_highlight]  합산한 결과값 강조 (기본 : 0) (특별히 보고싶은 결과값 있으면 정수로 기입하고 0이 강조되는 거 싫으면 그냥 거의 뜰일없는 10으로 해놓으면 됨 굳
+
+ ### 예시
+![image](https://github.com/SominYoon/somindice_bot/assets/59977972/d4d24e40-6436-460a-83c8-46fcea5e9b2b) ![image](https://github.com/SominYoon/somindice_bot/assets/59977972/0fc31b7e-15bf-4ee2-80e8-e7ccc15b3ac1) ![image](https://github.com/SominYoon/somindice_bot/assets/59977972/8c1633be-f0f7-4610-a405-1c90bfcf2045)
+
+### 여담 
+반복이랑 한번에 굴리는 주사위 갯수가 많으면, 화면비가 잘 맞아야지만 이쁨
+![image](https://github.com/SominYoon/somindice_bot/assets/59977972/3f7208c9-009b-4c6a-8dea-0732847b1f87)
