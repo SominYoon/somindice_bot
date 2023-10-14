@@ -50,12 +50,12 @@ async def roll(interaction: discord.Interaction, amount:app_.Range[int,1,200], s
         for i in range(repeat):
             roll = dice(a= amount, s=side) 
             for i,n in enumerate(roll["list"]):
-                if side = 100:
+                if side == 100:
                     if n==1:
                         roll["list"][i] = f'__`[0{n}]`__'
                     elif n==side:
                         roll["list"][i] = f'**__`[00]`__**'
-                    elif n>10:
+                    elif n<10:
                         roll["list"][i] = f'`[0{n}]`'
                     else:
                         roll["list"][i] = f'`[{n}]`'
@@ -77,8 +77,8 @@ async def roll(interaction: discord.Interaction, amount:app_.Range[int,1,200], s
         for i in range(repeat):
             roll = dice(a= amount, s=side) 
             for i,n in enumerate(roll["list"]):
-                if side = 100:
-                    if n>10:                    
+                if side == 100:
+                    if n<10:                    
                         roll["list"][i] = f'`[0{n}]`'
                     if n==side:
                         roll["list"][i] = f'`[00]`'
