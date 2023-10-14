@@ -50,12 +50,24 @@ async def roll(interaction: discord.Interaction, amount:app_.Range[int,1,200], s
         for i in range(repeat):
             roll = dice(a= amount, s=side) 
             for i,n in enumerate(roll["list"]):
-                if n==1:
-                    roll["list"][i] = f'__`[{n}]`__'
-                elif n==side:
-                    roll["list"][i] = f'**__`[{n}]`__**'
+                if side = 100:
+                    if n==1:
+                        roll["list"][i] = f'__`[0{n}]`__'
+                    elif n==side:
+                        roll["list"][i] = f'**__`[00]`__**'
+                    elif n>10:
+                        roll["list"][i] = f'`[0{n}]`'
+                    else:
+                        roll["list"][i] = f'`[{n}]`'
+
+
                 else:
-                    roll["list"][i] = f'`[{n}]`'
+                    if n==1:
+                        roll["list"][i] = f'__`[{n}]`__'
+                    elif n==side:
+                        roll["list"][i] = f'**__`[{n}]`__**'
+                    else:
+                        roll["list"][i] = f'`[{n}]`'
 
             sum_str += f"\n`{str(roll['sum'])}`"
             r_str += "\n"+' '.join(str(i) for i in roll["list"])
@@ -65,7 +77,7 @@ async def roll(interaction: discord.Interaction, amount:app_.Range[int,1,200], s
     else: 
         for i in range(repeat):
             roll = dice(a= amount, s=side) 
-            for i,n in enumerate(roll["list"]):
+            for i,n in enumerate(roll["list"]):                    
                 roll["list"][i] = f'`[{n}]`'
 
             sum_str += f"\n`{str(roll['sum'])}`"
